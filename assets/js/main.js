@@ -33,52 +33,52 @@ menuBar.addEventListener('click', () => {
 })
 
 const skills = [{
-    img: '',
+    img: './assets/images/html-css.png',
     title: 'HTML & CSS',
-    desc: '',
+    desc: 'The HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser.',
 }, {
-    img: '',
-    title: 'Sass',
-    desc: '',
-}, {
-    img: '',
-    title: 'Bootstrap',
-    desc: '',
-}, {
-    img: '',
-    title: 'Tailwind Css',
-    desc: '',
-}, {
-    img: '',
+    img: './assets/images/javascript.png',
     title: 'Javascript',
-    desc: '',
+    desc: 'JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.',
 }, {
-    img: '',
+    img: './assets/images/sass.webp',
+    title: 'Sass',
+    desc: 'Sass is a stylesheet language that’s compiled to CSS.Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.',
+}, {
+    img: './assets/images/bootstrap.webp',
+    title: 'Bootstrap',
+    desc: 'Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.',
+}, {
+    img: './assets/images/tailwind.webp',
+    title: 'Tailwind Css',
+    desc: 'Tailwind CSS is self-described as a utility first CSS framework.Tailwind makes it easier for the developer to test out new styles and change the layout.',
+}, {
+    img: './assets/images/vue.webp',
     title: 'VueJS',
-    desc: '',
+    desc: 'Vue.js is a progressive JavaScript framework, which is used to build UIs (User Interfaces) and SPAs (Single-page Applications). This framework is famous for its fast-paced learning curve.',
 }, {
-    img: '',
+    img: './assets/images/github.png',
     title: 'Github',
-    desc: '',
+    desc: 'GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.',
 }, {
-    img: '',
+    img: './assets/images/postman.png',
     title: 'Postman',
-    desc: '',
+    desc: 'Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.',
 }, {
-    img: '',
+    img: './assets/images/figma.png',
     title: 'Figma',
-    desc: 'Convert PSD2HTML',
+    desc: '(I use this to covert Design to HTML). Figma is a web-based graphics editing and user interface design app. You can use it to do all kinds of graphic design work from wireframing websites, designing mobile app interfaces, ',
 }]
 
-const boxSkills = document.querySelector('.box-skills')
+const boxSkills = document.querySelector('.box_skills')
 const htmlInner = skills.map((item) => {
     return ` 
-    <div class="col-lg-4 col-md-6 col-12">
+    <div class="col-lg-4 col-md-6 col-12 box_skill-item d-flex flex-column">
         <div class="box trans_3 d-flex flex-column justify-content-center">
             <div class="box-img">
                 <img src="${item.img}" alt="image">
             </div>
-            <div class="box-details text-center">
+            <div class="box-details d-flex flex-column text-center">
                 <div class="box-heading">${item.title}</div>
                 <div class="box-desc">${item.desc}</div>
             </div>

@@ -117,3 +117,36 @@
         }
     }
 }
+
+// skills
+.skills {
+    .container {
+        .row {
+            .box_skill-item {
+                cursor: pointer;
+                .box {
+                    border: 0.2rem solid var(--border);
+                    border-radius: 1rem;
+                    padding-top: 2rem;
+                    flex: 1;
+                    &-img {
+                        height: 20rem;
+                        text-align: center;
+                        img {
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    &-details {
+                        padding: 2rem 3rem;
+                        flex: 1;
+                    }
+                    &:hover {
+                        box-shadow: 0 2.4rem 6rem rgb(94 122 148 / 20%);
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
