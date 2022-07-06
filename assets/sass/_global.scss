@@ -1,72 +1,72 @@
-        ::selection {
-           background-color: $primary;
-           color: $white;
-       }
-       
-       body {
-           font-size: 1.6rem;
-           font-family: 'Poppins', sans-serif;
-           background-color: $bg-light;
-       }
-       
-       .btn-out-line {
-           padding: 1rem 3rem;
-           border: 0.2rem solid $primary;
-           color: $primary;
-           font-size: 1.8rem;
-           border-radius: 1rem;
-           a,
-           a:hover {
-               transition: unset!important;
-               -webkit-transition: unset!important;
-               -moz-transition: unset!important;
-               -o-transition: unset!important;
-           }
-           .icon {
-               font-size: 2rem;
-               margin-left: 1rem;
-               transition: all .2s ease;
-               -webkit-transition: all .2s ease;
-               -moz-transition: all .2s ease;
-               -o-transition: all .2s ease;
-           }
-           &:hover {
-               .icon {
-                   transform: translateX(1rem);
-                   -webkit-transform: translateX(1rem);
-               }
-               color: $white;
-               background-color: $primary;
-           }
-       }
-       
-       // section
-       .section {
-           padding: 17rem 0 0;
-           .container {
-               .row {
-                   margin-top: 5.6rem;
-               }
-               .heading {
-                   color: var(--main_text);
-                   @include section-heading;
-                   position: relative;
-                   display: inline-block;
-                   &::after {
-                       content: "";
-                       position: absolute;
-                       left: calc(100% + 1rem);
-                       top: 50%;
-                       transform: translateY(-50%);
-                       -webkit-transform: translateY(-50%);
-                       background-color: var(--sub);
-                       opacity: 0.5;
-                       height: 0.2rem;
-                       width: 52rem;
-                       @media screen and(max-width: 52rem) {
-                           width: 25rem;
-                       }
-                   }
-               }
-           }
-       }
+         ::selection {
+            background-color: $primary;
+            color: $white;
+        }
+        
+        body {
+            font-size: 1.6rem;
+            font-family: 'Poppins', sans-serif;
+            background-color: $bg-light;
+        }
+        
+        .btn-out-line {
+            padding: 1rem 3rem;
+            border: 0.2rem solid $primary;
+            color: $primary;
+            font-size: 1.8rem;
+            border-radius: 1rem;
+            a,
+            a:hover {
+                transition: unset!important;
+                -webkit-transition: unset!important;
+                -moz-transition: unset!important;
+                -o-transition: unset!important;
+            }
+            .icon {
+                font-size: 2rem;
+                margin-left: 1rem;
+                transition: all .2s ease;
+                -webkit-transition: all .2s ease;
+                -moz-transition: all .2s ease;
+                -o-transition: all .2s ease;
+            }
+            &:hover {
+                .icon {
+                    transform: translateX(1rem);
+                    -webkit-transform: translateX(1rem);
+                }
+                color: $white;
+                background-color: $primary;
+            }
+        }
+        
+        // section
+        .section {
+            padding: 17rem 0 0;
+            .container {
+                .row {
+                    margin-top: 5.6rem;
+                }
+                .heading {
+                    color: var(--main_text);
+                    @include section-heading;
+                    position: relative;
+                    display: inline-block;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: calc(100% + 1rem);
+                        top: 50%;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        background-color: var(--sub);
+                        opacity: 0.5;
+                        height: 0.2rem;
+                        width: 52rem;
+                        @media screen and(max-width: 52rem) {
+                            width: 20rem;
+                        }
+                    }
+                }
+            }
+        }
