@@ -1,0 +1,20 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "sass ./assets/sass/style.scss ./assets/css/main.css --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ducchinh02/Portfolio.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ducchinh02/Portfolio/issues"
+    },
+    "homepage": "https://github.com/ducchinh02/Portfolio#readme"
+}
