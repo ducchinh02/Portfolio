@@ -22,6 +22,8 @@
         --bg: #{$white};
         --bg-color: #{$text};
         --border: #{$subtitle};
+        --bg-comp : #{$white};
+        --comp-title : #{$primary};
     }
     
     body.active-darkmode {
@@ -34,6 +36,9 @@
         --bg-color: #{$text};
         --shadow: #ffffff;
         --border: #{$text};
+        --bg-comp : #{$component-dark};
+        --comp-title : #{$subtitle};
+
         background-color: var(--bg);
         .header {
             &_fixed {
@@ -54,8 +59,8 @@
                     }
                     .box_skill-item {
                         .box {
-                            &:hover {
-                                box-shadow: 0 1rem 3rem rgba(190, 202, 237, 0.4);
+                            &:hover {  
+                                background-color: var(--bg-comp);
                             }
                         }
                     }

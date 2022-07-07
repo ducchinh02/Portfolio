@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="./assets/images/sunflower_1f33b.webp" type="img/x-icon">
+    <!-- animate css -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
     <!-- owl carousel -->
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
@@ -26,23 +28,28 @@
         <div class="header_fixed align-items-center trans_3">
             <div class="container h-100 d-flex align-items-center">
                 <!-- logo -->
-                <div class="logo trans_3">XX<span>DCII</span>
+                <a href="#"><div class="logo trans_3">XX<span>DCII</span></a>
                 </div>
                 <!-- nav bar -->
                 <nav class=" nav-bar d-none h-100 d-lg-flex align-items-center ml-auto ">
                     <ul class="menu h-100 d-flex align-items-center ">
+                        <!-- menu item -->
                         <li class="menu-item">
                             <a href="#home">Home</a>
                         </li>
+                        <!-- menu item -->
                         <li class="menu-item">
                             <a href="#about">About</a>
                         </li>
+                        <!-- menu item -->
                         <li class="menu-item">
                             <a href="#skills">Skills</a>
                         </li>
+                        <!-- menu item -->
                         <li class="menu-item">
                             <a href="#work">Work</a>
                         </li>
+                        <!-- menu item -->
                         <li class="menu-item">
                             <a href="#contact">Contact</a>
                         </li>
@@ -57,28 +64,50 @@
                 </div>
                 <!-- toggle menu mobile -->
                 <div class="menu-bar align-items-center ml-5 d-flex trans_3 d-lg-none">
-                    <span class="trans_3"></span>
+                    <ion-icon name="menu-outline"></ion-icon>
                 </div>
             </div>
         </div>
     </header>
+    <!-- menu mobile -->
+        <ul class="menu-mobile trans_3 d-flex flex-column d-block d-lg-none">
+            <div class="close-menu trans_3 d-flex align-items-center"><ion-icon name="close-outline"></ion-icon></div>
+            <li class="menu-item margin-10 text-center">
+                <a href="#home" class="menu-link d-block">Home</a>
+            </li>
+            <li class="menu-item text-center">
+                <a href="#about" class="menu-link d-block">About</a>
+            </li>
+            <li class="menu-item text-center">
+                <a href="#skills" class="menu-link d-block">Skills</a>
+            </li>
+            <li class="menu-item text-center">
+                <a href="#work" class="menu-link d-block">Work</a>
+            </li>
+            <li class="menu-item text-center">
+                <a href="#contact" class="menu-link d-block">Contact</a>
+            </li>
+            <div class="text-center copy-right">X X D C I I - Duc Chinh</div>
+        </ul>
     <!-- home -->
     <section id="home" class="home">
         <div class="container ">
             <div class="row align-items-center ">
-                <div class="col-lg-6 col-12 text-center text-lg-left">
+                <!-- col content -->
+                <div class="col-lg-6 col-12 text-center text-lg-left animate__animated animate__fadeInLeft">
                     <div class="title-text ">Hi, my name is</div>
                     <div class="main_text ">
                         <div class="main_text-heading ">Duc Chinh</div>
                         <div class="main_text-job-name ">Front-end Developer</div>
                     </div>
-                    <div class="description ">Hi, Wishing you a new day full of energy for a productive day. I specialize in build responsive website interfaces with HTML,CSS,Javascript,...</div>
+                    <div class="description ">Wishing you a new day full of energy for a productive day. I specialize in build responsive website interfaces with HTML,CSS,Javascript,...</div>
                     <div class="btn btn-out-line trans_3 d-inline-flex align-items-center ">
                         <a href="#work " class="d-inline-flex align-items-center "> See my work
                         <ion-icon class="trans_3 icon d-inline-flex align-items-center" name="arrow-forward-outline"></ion-icon></a>
                     </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
+                <!-- col image -->
+                <div class="col-lg-6 d-none d-lg-block animate__animated animate__flipInY">
                     <img class="home-img " src="./assets/images/frontend-team-doing-web-designing-4344681-3605221.webp" alt=" ">
                 </div>
             </div>
@@ -89,29 +118,36 @@
         <div class="container ">
             <div class="heading">About</div>
             <div class="row gap-y-5 justify-content-lg-between justify-content-center">
+                <!-- col info -->
                 <div class="about_content col-lg-7 col-12">
                     <ul class="about_content-info d-flex flex-column gap-y-3">
+                        <!-- info -->
                         <li class="about_content-info-item">
                             <div class="icon"></div>
                             <div class="info"><span>Full name : </span>Lê Đức Chính</div>
                         </li>
+                        <!-- info -->
                         <li class="about_content-info-item">
                             <div class="icon"></div>
                             <div class="info"><span>Location : </span>Hanoi - VietNam</div>
                         </li>
+                        <!-- info -->
                         <li class="about_content-info-item">
                             <div class="icon"></div>
                             <div class="info"><span>Hobbies : </span>Listen to music, Practice Javascript to improve myself and learn about JS Frameworks</div>
                         </li>
+                        <!-- info -->
                         <li class="about_content-info-item">
                             <div class="icon"></div>
                             <div class="info"><span>Experience : </span> 1-5/2022 - Intern at Temis VN</div>
                         </li>
+                        <!-- info -->
                         <li class="about_content-info-item">
                             <div class="info"><span>I always try my best to learn to be able to complete the job in the most accurate way.</span></div>
                         </li>
                     </ul>
                 </div>
+                <!-- col image -->
                 <div class="about_img">
                     <div class="box-image trans_3 w-100 h-100">
                         <img src="./assets/images/avt.webp" class="trans_3" alt="">
@@ -124,7 +160,9 @@
     <!-- skills -->
     <section id="skills" class="skills section">
         <div class="container">
+            <!-- heading -->
             <div class="heading">My Skills</div>
+            <!-- inner data -->
             <div class="row gap-y-3 box_skills">
             </div>
         </div>
@@ -132,11 +170,98 @@
     <!-- skills -->
     <section id="work" class="work section">
         <div class="container">
-            <div class="heading">My Work</div>
-            <div class="row gap-y-3 box_skills">
+            <div class="heading">Some Things I've built</div>
+            <!-- projects -->
+            <div class="row gap-y-5 box_projects">
+            </div>
+            <!-- other projects -->
+            <div class="other_projects">
+                <div class="text-center other_projects-heading">
+                    Other Projects
+                </div>
+                <div class="text-center">
+                    <!-- menu list -->
+                <ul class="other_projects-menu nav justify-content-center" role="tablist">
+                    <!-- menu item -->
+                    <li class="other_projects-menu-tab tab-item" role="presentation">
+                        <a class="menu-link tab-link active" href="#landing-page" role="tab" data-toggle="tab" aria-selected="false">Landing Page</a>
+                    </li>
+                    <!-- menu item -->
+                    <li class="other_projects-menu-tab tab-item" role="presentation">
+                        <a class="menu-link tab-link" href="#coding-ui" role="tab" data-toggle="tab" aria-selected="false">Coding UI</a>
+                    </li>
+                </ul>
+                </div>
+                <!-- tab content -->
+                <div class="other_projects-content tab-content">
+                    <div class="tab-pane fade show active" role="tabpanel" id="landing-page">
+                        <!-- landing page -->
+                        <div class="owl-carousel project_landing">
+                            <!-- project item -->
+                        </div>
+                   </div> 
+                    <div class="tab-pane fade" role="tabpanel" id="coding-ui">
+                        <!-- coding ui -->
+                        <div class="owl-carousel coding_ui">
+                            <!-- project item -->
+                        </div>
+                    </div>
             </div>
         </div>
+        </div>
     </section>
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <!-- heading -->
+            <div class="heading text-center">Get In Touch</div>
+            <!-- title -->
+        <div class="contact-title d-flex align-items-center justify-content-center flex-wrap">
+            You can contact me through the ways below. I will reply you as soon as possible <ion-icon name="heart-outline" class="pl-2 d-lg-block d-none"></ion-icon>
+        </div>
+        <!-- list contact -->
+        <ul class="list-contact row align-items-center gap-y-3">
+            <div class="col-lg-6 col-md-12">
+                <div class="list-contact-item">
+                    <a target="_blank" href="https://www.facebook.com/chinh.05.10" class="d-flex align-items-center  gap-3">
+                        <div class="icon"><ion-icon class="d-flex align-items-center" name="logo-facebook"></ion-icon></div>
+                        <div class="text">Facebook</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="list-contact-item">
+                    <a target="_blank" href="https://www.instagram.com/_dcii.05_/?hl=vi" class="d-flex align-items-center  gap-3">
+                        <div class="icon"><ion-icon class="d-flex align-items-center" name="logo-instagram"></ion-icon></div>
+                        <div class="text">Instagram</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="list-contact-item">
+                    <a target="_blank" href="tel:0983763589" class="d-flex align-items-center  gap-3">
+                        <div class="icon"><ion-icon class="d-flex align-items-center" name="phone-portrait-outline"></ion-icon></div>
+                        <div class="text">Phone</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="list-contact-item">
+                    <a target="_blank" href="mailto:leducchinh02@gmail.com" class="d-flex align-items-center  gap-3">
+                        <div class="icon"><ion-icon class="d-flex align-items-center" name="mail-outline"></ion-icon></div>
+                        <div class="text">Email</div>
+                    </a>
+                </div>
+            </div>
+        </ul>
+            </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="text-center py-3">
+            Built By Duc Chinh - XXDCII
+        </div>
+    </footer>
     <!-- script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

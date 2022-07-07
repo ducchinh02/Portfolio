@@ -51,3 +51,13 @@ ul {
 .gap-y-5 {
     gap: 5rem 0;
 }
+.gap-3 {
+    gap: 3rem;
+}
+
+.gap-5 {
+    gap: 5rem;
+}
+.margin-10{
+    margin-top: 10rem!important;
+}

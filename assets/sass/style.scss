@@ -39,6 +39,7 @@
         .home-img {
             transform: scale(1.2);
             -webkit-transform: scale(1.2);
+            
         }
     }
 }
@@ -76,6 +77,7 @@
                 height: 31rem;
                 width: 36rem;
                 cursor: pointer;
+                margin-bottom: 10rem;
                 .box-image {
                     border-radius: 1rem;
                     overflow: hidden;
@@ -102,6 +104,7 @@
                     .about_img {
                         order: 1;
                         padding: 2rem;
+                        margin-bottom: 0;
                         .border-image {
                             width: calc(100% - 4rem);
                             height: calc(100% - 4rem);
@@ -122,6 +125,7 @@
 .skills {
     .container {
         .row {
+            padding-bottom: 8rem;
             .box_skill-item {
                 cursor: pointer;
                 .box {
@@ -149,4 +153,179 @@
             }
         }
     }
+}
+// work
+.work{
+    margin-top: -8rem;
+    .container{
+        .box_projects{
+            &-item{
+                .box{
+                    background-color: var(--bg-comp);
+                    padding: 4rem 3rem;
+                    border-top-right-radius: 4rem;
+                    border-bottom-left-radius: 4rem;
+                    cursor: pointer;
+                    &-img{
+                        width: 49rem;
+                        height: 24rem;
+                        overflow: hidden;
+                        border-top-right-radius: inherit;
+                        border-bottom-left-radius: inherit;
+                    @media screen and (max-width:991px) {
+                        &{
+                            width: 100%;
+                            img{
+                                height: 100%;
+                            }
+                        }
+                    }
+                    }
+                    &_desc{
+                        flex: 1;
+                        &-title{
+                            color: var( --comp-title);
+                            font-weight: 600;
+                            font-size: 1.8rem;
+                        }
+                        &-heading{
+                            @include section-heading;
+                            color: var(--main_text);
+                            padding: 1rem 0;
+                        }
+                        &-details{
+                            color: var(--sub);
+                        }
+                        &-link{
+                            gap: 0 2rem;
+                            padding-top: 2rem;
+                            .link-icon{
+                                font-size: 3rem;
+                                color: var(--main_text);
+                                &:hover{
+                                    color: var(--sub);
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                    filter: drop-shadow(2px 4px 4px var(--bg-color));
+                    }
+                }
+            }
+        }
+        .other_projects{
+            padding-top: 5rem;
+            &-heading{
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    color: var(--main_text);
+                    margin: 3rem 0;
+                    padding: 0 2rem;
+                }
+            &-menu{
+                gap: 0.5rem;
+                background-color: var(--bg-comp);
+                padding:1rem;
+                border-radius: 1rem;
+                display: inline-flex;
+                margin: 0 0 5rem ;
+                box-shadow: 0 2.4rem 6rem rgb(94 122 148 / 20%);
+                &-tab{
+                    .menu-link{
+                        color: var(--main_text);
+                        padding: 1.4rem 2rem;
+                        border-radius: 1rem;
+                        display: inline-block;
+                        &.active{
+                            background-color: var(--primary);
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            &-content{
+                padding: 2rem 0;
+                .item{
+                    padding: 2rem;
+                    border-radius: 1rem;
+                    background-color: var(--bg-comp);
+                    cursor: pointer;
+                    .links{
+                        &-item{
+                            font-size: 3rem;
+                            color: var(--main_text);
+                            &:hover{
+                                color: var(--sub);
+                            }
+                        }
+                    }
+                    .build_by{
+                        &-item{
+                            color: var(--sub);
+                            font-weight: 600;
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0 2.4rem 6rem rgb(94 122 148 / 20%);
+                    }
+                }
+            }
+        }
+    }
+}
+// contact
+.contact{
+    padding: 10rem 0;
+    .container{
+        .heading{
+            @include text-heading;
+            color: var(--main_text);
+        }
+        .contact-title{
+            color: var(--sub);
+            padding: 2rem 0;
+        }
+        .list-contact{
+            &-item{
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 2rem 4rem rgba(64, 79, 92, 0.2);
+            a{
+                padding: 2rem 30% 2rem;
+                background-color: var(--bg-comp);
+                color: var(--main_text);
+                font-size: 2.4rem;
+                @media screen and (max-width: 768px) {
+                    & {
+                        font-size: 2rem;
+                        padding: 2rem 35% 2rem;
+                    }
+                }
+                @media screen and (max-width: 576px) {
+                    & {
+                        font-size: 2rem;
+                        padding: 2rem 30% 2rem;
+                    }
+                }
+                ion-icon{
+                    font-size: 3rem;
+                    @media screen and (max-width: 768px) {
+                        & {
+                            font-size: 2.4rem;
+                        }
+                    }
+                }
+                &:hover{
+                    background-color: var(--primary);
+                    color:$white;
+                }
+            }
+        }
+        }
+    }
+}
+// footer
+.footer{
+    color: var(--sub);
 }

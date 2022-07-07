@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: $bg-light;
 }
-
+// global button
 .btn-out-line {
     padding: 1rem 3rem;
     border: 0.2rem solid $primary;
@@ -40,10 +40,12 @@ body {
     }
 }
 
-// section
+// stye section spacing & heading style
 .section {
-    padding: 17rem 0 0;
+    padding: 15rem 0 0;
+    overflow: hidden;
     .container {
+        overflow: hidden;
         .row {
             margin-top: 5.6rem;
         }
@@ -68,7 +70,7 @@ body {
                 }
                 @media screen and(max-width: 576px) {
                     top: calc(100% + 2rem);
-                    width: 30rem;
+                    width: 20rem;
                     left: 50%;
                     transform: translateX(-50%);
                     -webkit-transform: translateX(-50%);
@@ -81,7 +83,7 @@ body {
         }
     }
 }
-
+// style heading & text in box component
 .box-details {
     .box-heading {
         font-weight: 600;
