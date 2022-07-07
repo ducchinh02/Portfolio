@@ -4,6 +4,7 @@ const body = document.querySelector('body')
 const menuBar = document.querySelector('.menu-bar')
 const closeMenu = document.querySelector('.close-menu')
 let theme;
+const backToTop = document.querySelector('.back-to-top')
 // window on scroll
 window.addEventListener('scroll', () => {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -11,8 +12,18 @@ window.addEventListener('scroll', () => {
     } else {
         headerSticky.classList.remove("active")
     }
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTop.classList.add("active")
+    } else {
+        backToTop.classList.remove("active")
+    }
 })
-// toggle actove menu mobile
+// back to top
+backToTop.addEventListener('click',()=>{
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Oper
+})
+// toggle active menu mobile
 const menuMobile = document.querySelector('.menu-mobile')
 menuBar.addEventListener('click',()=>{
     menuMobile.classList.add('active')
@@ -375,4 +386,15 @@ const inner = projects.map((project) => {
             }
         }
     })
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+});
 
+
+sr.reveal(`.about`, );
+sr.reveal(`.skills`, );
+sr.reveal(`.work`, );
+sr.reveal(`.contact`, );
