@@ -42,9 +42,23 @@
 @mixin absoluteTop($position,$value) {
     @if $position == 'left' {
         left: 0;
+        top: 0;
     }
     @if $position == 'right' {
         right: 0;
+        top: 0;
+    }
+}
+@mixin absolutePosition($position) {
+    @if $position == 'left' {
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+    @if $position == 'right' {
+        right: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
     }
 }
 @mixin trans_3 {

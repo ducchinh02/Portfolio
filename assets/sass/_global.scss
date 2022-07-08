@@ -103,7 +103,6 @@ body {
 .owl-nav{
     .owl-prev, .owl-next{
         position:absolute;
-        top: 0;
         transform: translateY(-100%);
         -webkit-transform:translateY(-100%);
         ion-icon{

@@ -200,8 +200,15 @@
             color: var(--primary);
         }
     }
-    .menu-item{
-        margin-top: 5rem;
+    .menu{
+        flex-shrink: 0;
+        overflow: scroll;
+        // height: 60%;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+        .menu-item{
+            margin-bottom: 3rem;
         .menu-link{
             color: var(--main_text);
             font-size: 2rem;
@@ -213,8 +220,12 @@
             }
         }
     }
+    }
+   
     .copy-right{
-        margin-top: 5rem;
+        bottom: 5rem;
         color: var(--sub);
+        position: absolute;
+        @include absolutePosition('left')
     }
 }

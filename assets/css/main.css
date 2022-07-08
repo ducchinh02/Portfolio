@@ -184,22 +184,33 @@ body.active-darkmode .skills .container .row .box_skill-item .box:hover {
 .menu-mobile .close-menu:hover {
   color: var(--primary);
 }
-.menu-mobile .menu-item {
-  margin-top: 5rem;
+.menu-mobile .menu {
+  flex-shrink: 0;
+  overflow: scroll;
 }
-.menu-mobile .menu-item .menu-link {
+.menu-mobile .menu::-webkit-scrollbar {
+  width: 0;
+}
+.menu-mobile .menu .menu-item {
+  margin-bottom: 3rem;
+}
+.menu-mobile .menu .menu-item .menu-link {
   color: var(--main_text);
   font-size: 2rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
 }
-.menu-mobile .menu-item .menu-link:hover {
+.menu-mobile .menu .menu-item .menu-link:hover {
   background-color: var(--primary);
   color: #fff;
 }
 .menu-mobile .copy-right {
-  margin-top: 5rem;
+  bottom: 5rem;
   color: var(--sub);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 
 ::selection {
@@ -317,7 +328,6 @@ body {
 
 .owl-nav .owl-prev, .owl-nav .owl-next {
   position: absolute;
-  top: 0;
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
 }
@@ -334,9 +344,11 @@ body {
 }
 .owl-nav .owl-prev {
   left: 0;
+  top: 0;
 }
 .owl-nav .owl-next {
   right: 0;
+  top: 0;
 }
 
 .home {
