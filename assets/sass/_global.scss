@@ -96,3 +96,29 @@ body {
         padding-bottom: 2rem;
     }
 }
+/* custom owl carousel nav */
+.owl-stage-outer{
+    position: relative;
+}
+.owl-nav{
+    .owl-prev, .owl-next{
+        position:absolute;
+        top: 0;
+        transform: translateY(-100%);
+        -webkit-transform:translateY(-100%);
+        ion-icon{
+            font-size: 3rem;
+            color: var(--main_text);
+            @include trans_3;
+            &:hover{
+                color: var(--primary)
+            }
+        }
+    }
+    .owl-prev{
+        @include absoluteTop('left',-1);
+    }
+    .owl-next{
+        @include absoluteTop('right',-1);
+    }
+} 

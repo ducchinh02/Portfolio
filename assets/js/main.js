@@ -346,7 +346,7 @@ const inner = projects.map((project) => {
         loop: true,
         margin: 30,
         nav: true,
-        navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+        navText: ['<ion-icon name="arrow-back-outline"></ion-icon>', '<ion-icon name="arrow-forward-outline"></ion-icon>'],
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
@@ -367,10 +367,11 @@ const inner = projects.map((project) => {
         loop: true,
         margin: 30,
         nav: true,
-        navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+        navText: ['<ion-icon name="arrow-back-outline"></ion-icon>', '<ion-icon name="arrow-forward-outline"></ion-icon>'],
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
+        // dots : false,
         responsive: {
             0: {
                 items: 1

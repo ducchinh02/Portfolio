@@ -310,6 +310,35 @@ body {
   padding-bottom: 2rem;
 }
 
+/* custom owl carousel nav */
+.owl-stage-outer {
+  position: relative;
+}
+
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+}
+.owl-nav .owl-prev ion-icon, .owl-nav .owl-next ion-icon {
+  font-size: 3rem;
+  color: var(--main_text);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.owl-nav .owl-prev ion-icon:hover, .owl-nav .owl-next ion-icon:hover {
+  color: var(--primary);
+}
+.owl-nav .owl-prev {
+  left: 0;
+}
+.owl-nav .owl-next {
+  right: 0;
+}
+
 .home {
   padding-top: 16rem;
 }
@@ -591,7 +620,7 @@ body {
 .contact .container .list-contact-item {
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 2rem 4rem rgba(64, 79, 92, 0.2);
+  box-shadow: 0 2rem 6rem rgba(215, 215, 215, 0.1);
 }
 .contact .container .list-contact-item a {
   padding: 2rem 30% 2rem;

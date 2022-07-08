@@ -28,3 +28,28 @@
         padding: 0 2rem;
     }
 }
+
+@mixin absoluteCenter($position) {
+    @if $position == 'left' {
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+    }
+    @if $position == 'right' {
+        transform: translate(50%,-50%);
+        -webkit-transform: translate(50%,-50%);
+    }
+}
+@mixin absoluteTop($position,$value) {
+    @if $position == 'left' {
+        left: 0;
+    }
+    @if $position == 'right' {
+        right: 0;
+    }
+}
+@mixin trans_3 {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}

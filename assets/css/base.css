@@ -61,3 +61,10 @@ ul {
 .margin-10{
     margin-top: 10rem!important;
 }
+
+.owl-dots .owl-dot span {
+    /* custom here */
+}
+.owl-dots .owl-dot span.active {
+    /* custom here */
+}
