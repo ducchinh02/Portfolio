@@ -137,6 +137,7 @@ const projects = [
 // other project
 const otherProjects = [
     [{
+        id: 1,
         name : 'Online Marketing',
         details : 'Landing Page',
         links:{
@@ -150,6 +151,7 @@ const otherProjects = [
         }
     },
     {
+        id: 2,
         name : 'Payna',
         details : 'Landing Page',
         links:{
@@ -163,6 +165,7 @@ const otherProjects = [
         }
     },
     {
+        id: 3,
         name : 'Simple Product Cart',
         details : 'Single Page Application',
         links:{
@@ -175,6 +178,7 @@ const otherProjects = [
             item3 : '',
         }
     },  {
+        id:4,
         name : 'Weather App',
         details : 'Single Page Application',
         links:{
@@ -188,6 +192,7 @@ const otherProjects = [
         }
     }],
     [{
+        id:1,
         name : 'Time Countdown',
         details : 'Coding UI',
         links:{
@@ -201,6 +206,7 @@ const otherProjects = [
         }
     },
     {
+        id:2,
         name : 'Translator',
         details : 'Coding UI',
         links:{
@@ -214,6 +220,7 @@ const otherProjects = [
         }
     },
     {
+        id:3,
         name : 'Music Player',
         details : 'Coding UI',
         links:{
@@ -227,6 +234,7 @@ const otherProjects = [
         }
     },
     {
+        id:4,
         name : 'Instagram Story - Clone',
         details : 'Coding UI',
         links:{
@@ -289,7 +297,7 @@ const inner = projects.map((project) => {
 // inner other project (landing page)
     const projectLanding = document.querySelector('.project_landing')
     const landingInner = otherProjects[0].map((prj)=>{
-        const {name,details,links,build} = prj
+        const {id,name,details,links,build} = prj
         return ` <!-- project item -->
         <div class="project_landing-items trans_3 d-flex flex-column gap-3 item">
         <div class="links d-flex justify-content-between">
@@ -299,7 +307,7 @@ const inner = projects.map((project) => {
         <div class="box-details d-flex flex-column">
             <div class="box-heading">
             <a href="${links.web}" target="_blank" class="d-block">
-               ${name}
+               ${id + '. '}${name}
             </a>
               </div>
             <div class="box-desc">${details}</div>
@@ -316,7 +324,7 @@ const inner = projects.map((project) => {
 // inner other project (coding ui)
     const codingUI = document.querySelector('.coding_ui')
     const uiInner = otherProjects[1].map((ui)=>{
-        const {name,details,links,build} = ui
+        const {id,name,details,links,build} = ui
         return ` <!-- project item -->
         <div class="project_landing-items trans_3 d-flex flex-column gap-3 item">
         <div class="links d-flex justify-content-between">
@@ -326,7 +334,7 @@ const inner = projects.map((project) => {
         <div class="box-details d-flex flex-column">
             <div class="box-heading">
             <a href="${links.web}" target="_blank" class="d-block">
-               ${name}
+                ${id + '. '}${name}
             </a>
               </div>
             <div class="box-desc">${details}</div>
