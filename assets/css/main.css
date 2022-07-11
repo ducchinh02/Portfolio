@@ -583,6 +583,10 @@ body {
   background-color: var(--primary);
   color: #fff;
 }
+.work .container .other_projects-menu-tab .menu-link:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
 .work .container .other_projects-content {
   padding: 2rem 0;
 }
