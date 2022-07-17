@@ -120,6 +120,17 @@ const skills = [
 // data projects
 const projects = [
 	{
+		img: "./assets/images/poke.webp",
+		title: "Featured Project",
+		heading: "Poke Memories",
+		details:
+			"Card Memories Game with images of Pokemon monsters built with VueJS",
+		links: {
+			git: "https://github.com/ducchinh02/Poke-Memories",
+			web: "https://spectacular-sopapillas-8a54b2.netlify.app/",
+		},
+	},
+	{
 		img: "./assets/images/onetouch.webp",
 		title: "Featured Project",
 		heading: "Onetouch Education",
@@ -189,7 +200,7 @@ const otherProjects = [
 			details: "Single Page Application",
 			links: {
 				git: "https://github.com/ducchinh02/Simple-ProductCart-VueJS",
-				web: "https://github.com/ducchinh02/Simple-ProductCart-VueJS",
+				web: "https://melodic-phoenix-4f9339.netlify.app/",
 			},
 			build: {
 				item1: "VueJS",
