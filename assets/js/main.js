@@ -222,6 +222,20 @@ const otherProjects = [
 				item3: "Bootstrap",
 			},
 		},
+		{
+			id: 5,
+			name: "Checkout Page",
+			details: "Landing Page",
+			links: {
+				git: "https://github.com/ducchinh02/Checkout-Page",
+				web: "https://ducchinh02.github.io/Checkout-Page/",
+			},
+			build: {
+				item1: "HTML",
+				item2: "SCSS",
+				item3: "Javascript",
+			},
+		},
 	],
 	[
 		{
