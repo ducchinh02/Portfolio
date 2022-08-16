@@ -326,12 +326,14 @@ body {
   position: relative;
 }
 
-.owl-nav .owl-prev, .owl-nav .owl-next {
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
   position: absolute;
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
 }
-.owl-nav .owl-prev ion-icon, .owl-nav .owl-next ion-icon {
+.owl-nav .owl-prev ion-icon,
+.owl-nav .owl-next ion-icon {
   font-size: 3rem;
   color: var(--main_text);
   transition: all 0.3s ease;
@@ -339,7 +341,8 @@ body {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-.owl-nav .owl-prev ion-icon:hover, .owl-nav .owl-next ion-icon:hover {
+.owl-nav .owl-prev ion-icon:hover,
+.owl-nav .owl-next ion-icon:hover {
   color: var(--primary);
 }
 .owl-nav .owl-prev {
