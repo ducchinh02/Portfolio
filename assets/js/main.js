@@ -126,7 +126,7 @@ const projects = [
 		details: "Music Web Application with VueJS",
 		links: {
 			git: "https://github.com/ducchinh02/Vue-Music",
-			web: "https://62fa73246b267d79f298d13c--preeminent-kashata-64c587.netlify.app/",
+			web: "https://62fcf967f6adad13ebc70d2b--candid-starburst-2ede9f.netlify.app/",
 		},
 	},
 	{
