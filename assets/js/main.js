@@ -6,6 +6,7 @@ const closeMenu = document.querySelector(".close-menu");
 let theme;
 const backToTop = document.querySelector(".back-to-top");
 // window on scroll
+let scrollPos = 0;
 window.addEventListener("scroll", () => {
 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 		headerSticky.classList.add("active");
@@ -13,13 +14,15 @@ window.addEventListener("scroll", () => {
 		headerSticky.classList.remove("active");
 	}
 	if (
-		document.body.scrollTop > 300 ||
-		document.documentElement.scrollTop > 300
+		(document.body.scrollTop > scrollPos && document.body.scrollTop > 300) ||
+		(document.documentElement.scrollTop > scrollPos &&
+			document.documentElement.scrollTop > 300)
 	) {
 		backToTop.classList.add("active");
 	} else {
 		backToTop.classList.remove("active");
 	}
+	scrollPos = document.body.getBoundingClientRect().top * -1;
 });
 // back to top
 backToTop.addEventListener("click", () => {
