@@ -499,6 +499,9 @@ body {
 .work {
   margin-top: -8rem;
 }
+.work .container .box_projects-item:first-child img {
+  object-fit: contain;
+}
 .work .container .box_projects-item .box {
   background-color: var(--bg-comp);
   padding: 4rem 3rem;

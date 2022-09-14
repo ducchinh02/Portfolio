@@ -158,6 +158,11 @@
 	margin-top: -8rem;
 	.container {
 		.box_projects {
+			&-item:first-child {
+				img {
+					object-fit: contain;
+				}
+			}
 			&-item {
 				.box {
 					background-color: var(--bg-comp);
