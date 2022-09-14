@@ -123,6 +123,16 @@ const skills = [
 // data projects
 const projects = [
 	{
+		img: "./assets/images/Ecommerce.svg",
+		title: "Featured Project",
+		heading: "Mini Ecommerce App",
+		details: "Ecommerce App with VueJS",
+		links: {
+			git: "https://github.com/ducchinh02/Mini-Ecommerce-App",
+			web: "https://6318653324607c1aaa2e21c3--sprightly-palmier-2bc429.netlify.app/",
+		},
+	},
+	{
 		img: "./assets/images/ImageContainerChill.svg",
 		title: "Featured Project",
 		heading: "Vue Music",
@@ -163,16 +173,6 @@ const projects = [
 		links: {
 			git: "https://github.com/ducchinh02/Mellifera",
 			web: "https://ducchinh02.github.io/Mellifera/product.html",
-		},
-	},
-	{
-		img: "./assets/images/login-page.webp",
-		title: "Featured Project",
-		heading: "Login Page Validation",
-		details: "The login template handles user input cases",
-		links: {
-			git: "https://github.com/ducchinh02/Login-Page-Validation",
-			web: "https://ducchinh02.github.io/Login-Page-Validation/",
 		},
 	},
 ];
@@ -246,6 +246,34 @@ const otherProjects = [
 			build: {
 				item1: "HTML",
 				item2: "SCSS",
+				item3: "Javascript",
+			},
+		},
+		{
+			id: 6,
+			name: "Real Estate",
+			details: "Landing Page",
+			links: {
+				git: "https://github.com/ducchinh02/Real-Estate",
+				web: "https://ducchinh02.github.io/Real-Estate/",
+			},
+			build: {
+				item1: "HTML",
+				item2: "SCSS",
+				item3: "Bootstrap",
+			},
+		},
+		{
+			id: 7,
+			name: "Login Page Validation",
+			details: "Function Template",
+			links: {
+				git: "https://github.com/ducchinh02/Login-Page-Validation",
+				web: "https://ducchinh02.github.io/Login-Page-Validation/",
+			},
+			build: {
+				item1: "HTML",
+				item2: "CSS",
 				item3: "Javascript",
 			},
 		},
