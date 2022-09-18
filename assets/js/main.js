@@ -126,17 +126,17 @@ const projects = [
 		img: "./assets/images/Ecommerce.svg",
 		title: "Featured Project",
 		heading: "Mini Ecommerce App",
-		details: "Ecommerce App with VueJS",
+		details: "Delicious snacks with VueJS",
 		links: {
 			git: "https://github.com/ducchinh02/Mini-Ecommerce-App",
-			web: "https://6318653324607c1aaa2e21c3--sprightly-palmier-2bc429.netlify.app/",
+			web: "https://6326fc7842f9c9000915bab8--sprightly-palmier-2bc429.netlify.app/",
 		},
 	},
 	{
 		img: "./assets/images/ImageContainerChill.svg",
 		title: "Featured Project",
 		heading: "Vue Music",
-		details: "Music Web Application with VueJS",
+		details: "Enjoy relaxing moments with the music player built by vuejs",
 		links: {
 			git: "https://github.com/ducchinh02/Vue-Music",
 			web: "https://candid-starburst-2ede9f.netlify.app/",
