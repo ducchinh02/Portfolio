@@ -59,6 +59,14 @@ body.active-darkmode .skills .container .row .box_skill-item .box:hover {
   left: 0;
   right: 0;
 }
+.header_fixed.active .nav-bar .menu-item.active a {
+  color: var(--primary);
+}
+.header_fixed.active .nav-bar .menu-item.active a::before {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
 .header_fixed .container .logo {
   font-size: 3rem;
   color: var(--main_text);
@@ -200,7 +208,7 @@ body.active-darkmode .skills .container .row .box_skill-item .box:hover {
   padding: 1rem 2rem;
   border-radius: 1rem;
 }
-.menu-mobile .menu .menu-item .menu-link:hover {
+.menu-mobile .menu .menu-item .menu-link:hover, .menu-mobile .menu .menu-item .menu-link.active {
   background-color: var(--primary);
   color: #fff;
 }
@@ -425,30 +433,46 @@ body {
 }
 .about .container .row .about_img {
   position: relative;
-  height: 31rem;
+  height: 38rem;
   width: 36rem;
   cursor: pointer;
   margin-bottom: 10rem;
 }
 .about .container .row .about_img .box-image {
-  border-radius: 1rem;
+  border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-}
-.about .container .row .about_img .box-image:hover {
-  transform: translate(-2rem, -2rem);
-  -webkit-transform: translate(-2rem, -2rem);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 .about .container .row .about_img .border-image {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transform: scale(0);
+  -webkit-transform: scale(0);
   position: absolute;
   width: calc(100% - 3rem);
   bottom: 0;
   right: 0;
   height: 100%;
-  border-radius: 1rem;
-  border: 0.3rem solid var(--primary);
+  border-radius: 2rem;
+  background: url("../images/bgImage.webp") center/cover no-repeat;
   z-index: -1;
-  box-shadow: 1rem 1rem 8rem rgba(254, 76, 80, 0.4);
+  box-shadow: 0rem 0rem 8rem rgba(254, 76, 80, 0.4);
+}
+.about .container .row .about_img:hover .border-image {
+  width: 100%;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.about .container .row .about_img:hover .box-image {
+  opacity: 0;
+  transform: scale(0);
+  -webkit-transform: scale(0);
 }
 @media screen and (max-width: 991px) {
   .about .container .row .about_img {
@@ -461,6 +485,9 @@ body {
     height: calc(100% - 4rem);
     bottom: 2rem;
     right: 2rem;
+  }
+  .about .container .row .about_img:hover .border-image {
+    width: calc(100% - 4rem);
   }
   .about .container .row .about_content {
     order: 2;
@@ -618,7 +645,7 @@ body {
 }
 
 .contact {
-  padding: 10rem 0;
+  padding: 15rem 0;
 }
 .contact .container .heading {
   font-size: 4.8rem;

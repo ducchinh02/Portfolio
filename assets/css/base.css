@@ -1,70 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+	font-size: 62.5%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 a,
 a:hover {
-    text-decoration: none;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    color: unset;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	color: unset;
 }
 
 img {
-    width: 100%;
-    object-fit: cover;
+	width: 100%;
+	object-fit: cover;
 }
 
 input,
 button {
-    outline: none;
-    border: none;
+	outline: none;
+	border: none;
 }
 
 ul {
-    margin: 0;
-    list-style-type: none;
+	margin: 0;
+	list-style-type: none;
 }
 
 .trans_3 {
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 }
 
 .gap-y-3 {
-    gap: 3rem 0;
+	gap: 3rem 0;
 }
 
 .gap-y-5 {
-    gap: 5rem 0;
+	gap: 5rem 0;
 }
 .gap-3 {
-    gap: 3rem;
+	gap: 3rem;
 }
 
 .gap-5 {
-    gap: 5rem;
+	gap: 5rem;
 }
-.margin-10{
-    margin-top: 10rem!important;
+.margin-10 {
+	margin-top: 10rem !important;
 }
 
 .owl-dots .owl-dot span {
-    /* custom here */
+	/* custom here */
 }
 .owl-dots .owl-dot span.active {
-    /* custom here */
+	/* custom here */
+}
+
+.overflow-unset {
+	overflow: unset !important;
 }

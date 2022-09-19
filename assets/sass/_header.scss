@@ -23,6 +23,16 @@
 								right: 0;
 							}
 						}
+						&.active {
+							a {
+								color: var(--primary);
+								&::before {
+									width: 100%;
+									left: 0;
+									right: 0;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -214,7 +224,8 @@
 				font-size: 2rem;
 				padding: 1rem 2rem;
 				border-radius: 1rem;
-				&:hover {
+				&:hover,
+				&.active {
 					background-color: var(--primary);
 					color: $white;
 				}

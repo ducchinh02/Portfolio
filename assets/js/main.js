@@ -5,9 +5,23 @@ const menuBar = document.querySelector(".menu-bar");
 const closeMenu = document.querySelector(".close-menu");
 let theme;
 const backToTop = document.querySelector(".back-to-top");
+const sections = document.querySelectorAll("section");
+const menuItems = document.querySelectorAll(".header nav .menu .menu-item");
+const menuMobileLink = document.querySelectorAll(".menu-mobile a");
 // window on scroll
 let scrollPos = 0;
 window.addEventListener("scroll", () => {
+	sections.forEach((sec, index) => {
+		if (sec.getBoundingClientRect().top <= 0) {
+			const menuActive = document.querySelector(
+				".header nav .menu .menu-item.active"
+			);
+			if (menuActive) {
+				menuActive.classList.remove("active");
+			}
+			menuItems[index].classList.add("active");
+		}
+	});
 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 		headerSticky.classList.add("active");
 	} else {
@@ -43,9 +57,13 @@ closeMenu.addEventListener("click", () => {
 	unActiveMenu();
 });
 
-const menuMobileLink = document.querySelectorAll(".menu-mobile a");
 menuMobileLink.forEach((link) => {
 	link.addEventListener("click", () => {
+		const linkActive = menuMobile.querySelector(".menu-mobile a.active");
+		if (linkActive) {
+			linkActive.classList.remove("active");
+		}
+		link.classList.add("active");
 		unActiveMenu();
 	});
 });
