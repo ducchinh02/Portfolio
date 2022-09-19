@@ -150,7 +150,7 @@ const projects = [
 			"Card Memories Game with images of Pokemon monsters built with VueJS",
 		links: {
 			git: "https://github.com/ducchinh02/Poke-Memories",
-			web: "https://spectacular-sopapillas-8a54b2.netlify.app/",
+			web: "https://6327d2f9209c690008017242--spectacular-sopapillas-8a54b2.netlify.app/",
 		},
 	},
 	{
