@@ -79,6 +79,11 @@
 								color: var(--primary);
 							}
 						}
+						&.active {
+							a {
+								color: var(--primary);
+							}
+						}
 					}
 				}
 			}

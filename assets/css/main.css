@@ -109,6 +109,9 @@ body.active-darkmode .skills .container .row .box_skill-item .box:hover {
 .header_fixed .container .nav-bar .menu-item a:hover {
   color: var(--primary);
 }
+.header_fixed .container .nav-bar .menu-item.active a {
+  color: var(--primary);
+}
 .header_fixed .container .toggle-mode {
   width: 6rem;
   height: 3.4rem;
