@@ -462,12 +462,12 @@ body {
   border-radius: 2rem;
   background: url("../images/bgImage.webp") center/cover no-repeat;
   z-index: -1;
-  box-shadow: 0rem 0rem 8rem rgba(254, 76, 80, 0.4);
 }
 .about .container .row .about_img:hover .border-image {
   width: 100%;
   transform: scale(1);
   -webkit-transform: scale(1);
+  box-shadow: 0rem 0rem 8rem rgba(150, 114, 255, 0.5);
 }
 .about .container .row .about_img:hover .box-image {
   opacity: 0;

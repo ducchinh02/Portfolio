@@ -284,7 +284,7 @@ const otherProjects = [
 		{
 			id: 7,
 			name: "Login Page Validation",
-			details: "Function Template",
+			details: "Landing Page",
 			links: {
 				git: "https://github.com/ducchinh02/Login-Page-Validation",
 				web: "https://ducchinh02.github.io/Login-Page-Validation/",

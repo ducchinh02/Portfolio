@@ -95,13 +95,13 @@
 					border-radius: 2rem;
 					background: url("../images/bgImage.webp") center / cover no-repeat;
 					z-index: -1;
-					box-shadow: 0rem 0rem 8rem rgba($color: $primary, $alpha: 0.4);
 				}
 				&:hover {
 					.border-image {
 						width: 100%;
 						transform: scale(1);
 						-webkit-transform: scale(1);
+						box-shadow: 0rem 0rem 8rem rgba($color: #9672ff, $alpha: 0.5);
 					}
 					.box-image {
 						opacity: 0;
