@@ -141,6 +141,16 @@ const skills = [
 // data projects
 const projects = [
 	{
+		img: "./assets/images/empty-wishlist.webp",
+		title: "Featured Project",
+		heading: "Plant Store",
+		details: "SPA With VueJS & Firebase Authentication",
+		links: {
+			git: "https://github.com/ducchinh02/Plant-Store",
+			web: "https://stalwart-monstera-dd8c03.netlify.app/",
+		},
+	},
+	{
 		img: "./assets/images/Ecommerce.svg",
 		title: "Featured Project",
 		heading: "Mini Ecommerce App",

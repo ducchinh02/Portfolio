@@ -529,8 +529,9 @@ body {
 .work {
   margin-top: -8rem;
 }
-.work .container .box_projects-item:first-child img {
-  object-fit: contain;
+.work .container .box_projects-item img {
+  height: 100%;
+  object-fit: cover;
 }
 .work .container .box_projects-item .box {
   background-color: var(--bg-comp);
