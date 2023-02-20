@@ -12,7 +12,7 @@ const menuMobileLink = document.querySelectorAll(".menu-mobile a");
 let scrollPos = 0;
 window.addEventListener("scroll", () => {
 	sections.forEach((sec, index) => {
-		if (sec.getBoundingClientRect().top <= 0) {
+		if (sec.getBoundingClientRect().top <= 100) {
 			const menuActive = document.querySelector(
 				".header nav .menu .menu-item.active"
 			);
