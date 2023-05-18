@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="./assets/images/sunflower_1f33b.webp" type="img/x-icon">
+    <script src="https://sdk.pushy.me/web/1.0.9/pushy-sdk.js"></script>
     <!-- animate css -->
     <link rel="stylesheet" href="./assets/css/animate.min.css">
     <!-- owl carousel -->
@@ -280,6 +281,28 @@
             Built By Duc Chinh - XXDCII
         </div>
     </footer>
+
+    <script>
+        const registerServiceWorker = async () => {
+            if ("serviceWorker" in navigator) {
+                try {
+                const registration = await navigator.serviceWorker.register("/service-worker.js", {
+                    scope: "/",
+                });
+                if (registration.installing) {
+                    console.log("Service worker installing");
+                } else if (registration.waiting) {
+                    console.log("Service worker installed");
+                } else if (registration.active) {
+                    console.log("Service worker active");
+                }
+                } catch (error) {
+                console.error(`Registration failed with ${error}`);
+                }
+            }
+            };
+registerServiceWorker();
+    </script>
     <!-- script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -1,3 +1,5 @@
+
+
 const toggleMode = document.querySelector(".toggle-mode");
 const headerSticky = document.querySelector(".header_fixed");
 const body = document.querySelector("body");
@@ -147,7 +149,7 @@ const projects = [
 		details: "SPA With VueJS & Firebase Authentication",
 		links: {
 			git: "https://github.com/ducchinh02/Plant-Store",
-			web: "https://stalwart-monstera-dd8c03.netlify.app/",
+			web: "https://dcii-plant-store.netlify.app/",
 		},
 	},
 	{
@@ -157,7 +159,7 @@ const projects = [
 		details: "Delicious snacks with VueJS",
 		links: {
 			git: "https://github.com/ducchinh02/Mini-Ecommerce-App",
-			web: "https://6326fc7842f9c9000915bab8--sprightly-palmier-2bc429.netlify.app/",
+			web: "https://dciiecommerce.netlify.app/",
 		},
 	},
 	{
@@ -167,7 +169,7 @@ const projects = [
 		details: "Enjoy relaxing moments with the music player built by vuejs",
 		links: {
 			git: "https://github.com/ducchinh02/Vue-Music",
-			web: "https://candid-starburst-2ede9f.netlify.app/",
+			web: "https://vue-music-dcii.netlify.app/",
 		},
 	},
 	{
@@ -178,7 +180,7 @@ const projects = [
 			"Card Memories Game with images of Pokemon monsters built with VueJS",
 		links: {
 			git: "https://github.com/ducchinh02/Poke-Memories",
-			web: "https://6327d2f9209c690008017242--spectacular-sopapillas-8a54b2.netlify.app/",
+			web: "https://poke-memories-dcii.netlify.app/",
 		},
 	},
 	{
