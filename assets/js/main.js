@@ -1,4 +1,18 @@
-
+// Register visitor's browser for push notifications
+// if (!Pushy.isRegistered()) {
+// 	Pushy.register({ appId: "5fecf41b13a303083a374677" })
+// 		.then(function (deviceToken) {
+// 			console.log("Pushy device token: " + deviceToken);
+// 		})
+// 		.catch(function (err) {
+// 			console.error(err);
+// 		});
+// }
+// Pushy.setNotificationListener(function (data) {
+// 	// Print notification payload data
+// 	console.log("Received notification: " + JSON.stringify(data));
+// 	let message = data.message || "Test notification";
+// });
 
 const toggleMode = document.querySelector(".toggle-mode");
 const headerSticky = document.querySelector(".header_fixed");
@@ -151,6 +165,7 @@ const projects = [
 			git: "https://github.com/ducchinh02/Plant-Store",
 			web: "https://dcii-plant-store.netlify.app/",
 		},
+		object_fit: "contain",
 	},
 	{
 		img: "./assets/images/Ecommerce.svg",
@@ -161,6 +176,7 @@ const projects = [
 			git: "https://github.com/ducchinh02/Mini-Ecommerce-App",
 			web: "https://dciiecommerce.netlify.app/",
 		},
+		object_fit: "contain",
 	},
 	{
 		img: "./assets/images/ImageContainerChill.svg",
@@ -396,7 +412,7 @@ const inner = projects
         <div class="box trans_3 d-flex flex-wrap align-items-center gap-3">
             <div class="box-img">
                 <a target="_blank"  href="${project.links["web"]}">
-                <img src="${project.img}" alt="" srcset=""></a>
+                <img src="${project.img}" alt="" srcset="" style="object-fit:${project?.object_fit}"></a>
             </div>
             <div class="box_desc">
                 <div class="box_desc-title">${project.title}</div>
